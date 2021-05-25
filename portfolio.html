@@ -7,23 +7,24 @@
     <title>Портфолио</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!-- Верхняя панель -->
-    <header>
-        <div class="header">
+    <header class="header">
+        <div class="container">
         <a href=" " class="header-logo"> <span class="logo-blue">Web</span>Studio</a>
         <nav>
-            <ul class="header-nav li-none">
-                <li> <a href="./index.html " class="link header-link">Студия</a> </li>
-                <li> <a href="./portfolio.html" class="link header-link-current">Портфолио</a> </li>
-                <li> <a href=" " class="link header-link">Контакты</a> </li>
+            <ul class="header-nav">
+                <li> <a href="./index.html " class="header-link">Студия</a> </li>
+                <li> <a href="./portfolio.html" class="header-link-current">Портфолио</a> </li>
+                <li> <a href=" " class="header-link">Контакты</a> </li>
             </ul>
         </nav>
-            <ul class="header-address li-none">
-                <li> <a href="mailto:info@devstudio.com" class="link header-address-grey">info@devstudio.com</a> </li>
-                <li> <a href="tel:+380961111111" class="link header-address-grey">+38 096 111 11 11</a> </li>
+            <ul class="header-address">
+                <li> <a href="mailto:info@devstudio.com" class="header-address-grey">info@devstudio.com</a> </li>
+                <li> <a href="tel:+380961111111" class="header-address-grey">+38 096 111 11 11</a> </li>
             </ul>
         </div>
     </header>
@@ -32,7 +33,7 @@
     <!-- <h1>Портфолио</h1>-->
         <section class="portfolio-works"> <!-- Кнопки на примеры работ-->
            <div class="container">
-                <ul class="li-none">
+                <ul>
                     <li> <button type="button" class="button-portfolio">Все</button>
                     <li> <button type="button" class="button-portfolio">Веб-сайты</button> 
                     <li> <button type="button" class="button-portfolio">Приложения</button> 
@@ -42,7 +43,7 @@
            </div>
           <!-- <h2>Примеры работ</h2> -->
            <div class="container">
-                <ul class="li-none">
+                <ul>
                     <li>
                         <img src="./images/portfolio/technokryak.jpg" alt="фото Технокряк" width="370" /> 
                         <h3 class="portfolio-item">Технокряк</h3>
@@ -93,16 +94,16 @@
         </section>
     </main>
      <!-- Нижняя панель -->
-     <footer>
-        <div class="footer">
-        <a href=" " class="footer-logo"><span class="logo-blue">Web</span>Studio</a>
-        <address>
-            <ul class="footer-address li-none">
-                <li> <p>г. Киев, пр-т Леси Украинки, 26</p> </li>
-                <li> <a href="mailto:info@example.com" class="footer-link footer-address-white">info@example.com</a> </li>
-                <li> <a href="tel:+380991111111" class="footer-link footer-address-white">+38 099 111 11 11</a> </li>
-            </ul>
-        </address>
+     <footer class="footer">
+        <div class="container">
+            <a href=" " class="footer-logo"><span class="logo-blue">Web</span>Studio</a>
+            <address>
+                <ul class="footer-address">
+                    <li> <p>г. Киев, пр-т Леси Украинки, 26</p> </li>
+                    <li> <a href="mailto:info@example.com" class="footer-address-white">info@example.com</a> </li>
+                    <li> <a href="tel:+380991111111" class="footer-address-white">+38 099 111 11 11</a> </li>
+                </ul>
+            </address>
         </div>
     </footer>       
 </body>

@@ -13,29 +13,41 @@
 }
 
 /* Общие стили */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: var(--main-font);
     color: var(--black-color-text);
     background-color: var(--white-color);
     letter-spacing: 0.03em;
+    margin: 0;
 }
-
-.li-none {
+ul, p {
     list-style-type: none;
+    margin-bottom: 0;
+}
+h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    width: 1200px;
+    margin: 0 auto;
+    outline: 2px solid tomato;
 }
 
 /* Стили верхней панели */
-.header-nav,
-.header-address {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.17;
-}
-.link {
-    text-decoration: none;
-    letter-spacing: 0.02em;
-    font-family: inherit;
-    color: inherit;  
+.header {
+   
 }
 .header-logo {
     text-decoration: none;
@@ -45,7 +57,21 @@ body {
     line-height: 1.17;
     color: var(--black-color);
 }
+.header-nav,
 .header-address {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+}
+.header-link,
+.header-link-current,
+.header-address-grey {
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    font-family: inherit;
+    color: inherit;  
+}
+.header-address-grey {
     color: var(--grey-color-text);
 }
 .logo-blue,
@@ -60,12 +86,16 @@ body {
 /*  Стили контента */
 
 /* Общее для секций */
-.container {
-    width: 1200px;
-    margin: 0, auto;
-}
+
 /* Кнопки - pointer, шрифт и цвет*/
 .button-orderservice {
+    display: inline-block;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    min-width: 200px;
+    text-align: center;
+    border: none;
     cursor: pointer;
     font-family: inherit;
     font-weight: 700;
@@ -81,6 +111,9 @@ body {
     background-color: var(--grey-background-color);
 }
 .button-portfolio {
+    text-align: center;
+    border-radius: 4px;
+    border: none;
     cursor: pointer;
     font-family: inherit;
     font-weight: 500;
@@ -96,9 +129,14 @@ body {
 }
 /* Стили основного контента Студия*/
 .studio-hero {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 94px;
     background-color: var(--black-background-color);
 }
 .studio-title {
+    width: 696px;
+    margin-left: 252px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -150,17 +188,6 @@ body {
 }
 
 /* Стили нижней панели */
-.footer {
-    font-size: 14px;
-    line-height: 1.71;
-    color: var(--white-color);
-    background-color: var(--black-background-color);
-}
-.footer-link {
-    text-decoration: none;
-    font-family: inherit;
-    color: inherit;  
-}   
 .footer-logo {
     text-decoration: none;
     font-family: var(--accent-font);
@@ -169,6 +196,17 @@ body {
     line-height: 1.17;
     color: var(--white-color);
 }
+.footer {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--white-color);
+    background-color: var(--black-background-color);
+}
+.footer-address-white {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;  
+}   
 .footer-address {
     font-style: normal;
 }

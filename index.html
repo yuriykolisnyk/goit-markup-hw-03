@@ -7,26 +7,27 @@
     <title>Главная</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <!-- Верхняя панель -->
-    <header>
-        <div class="header">
-        <a href=" " class="header-logo"> <span class="logo-blue">Web</span>Studio</a>
-        <nav>
-            <ul class="header-nav li-none">
-                <li> <a href="./index.html " class="link header-link-current">Студия</a> </li>
-                <li> <a href="./portfolio.html" class="link header-link">Портфолио</a> </li>
-                <li> <a href=" " class="link header-link">Контакты</a> </li>
-            </ul>
-        </nav>
-            <ul class="header-address li-none">
-                <li> <a href="mailto:info@devstudio.com" class="link header-address-grey">info@devstudio.com</a> </li>
-                <li> <a href="tel:+380961111111" class="link header-address-grey">+38 096 111 11 11</a> </li>
-            </ul>
+    <!-- Верхняя панель -->   
+    <header class="header"> 
+        <div class="container">      
+            <a href=" " class="header-logo"> <span class="logo-blue">Web</span>Studio</a>
+            <nav>
+                <ul class="header-nav">
+                <li> <a href="./index.html " class="header-link-current">Студия</a> </li>
+                <li> <a href="./portfolio.html" class="header-link">Портфолио</a> </li>
+                <li> <a href=" " class="header-link">Контакты</a> </li>
+                </ul>
+            </nav>
+                <ul class="header-address">
+                <li> <a href="mailto:info@devstudio.com" class="header-address-grey">info@devstudio.com</a> </li>
+                <li> <a href="tel:+380961111111" class="header-address-grey">+38 096 111 11 11</a> </li>
+                </ul>
         </div>
-    </header>
+    </header>   
     <!-- Контент -->
     <main class="studio">
         <!-- Эффективные решения -->
@@ -40,7 +41,7 @@
         <section class="studio-features">
            <!-- <h2>Наши особенности</h2> -->
             <div class="container">
-                <ul class="li-none">
+                <ul>
                     <li>
                         <h3 class="studio-item">Внимание к деталям</h3>
                         <p class="studio-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -64,7 +65,7 @@
         <section class="studio-solutions">
             <div class="container">
                 <h2 class="studio-subtitle">Чем мы занимаемся</h2>
-                    <ul class="li-none">
+                    <ul>
                         <li>
                             <img src="./images/doing1.jpg" alt="фото решений для ПК" width="370" />
                         </li>
@@ -81,7 +82,7 @@
         <section class="studio-team">
             <div class="container">
                 <h2 class="studio-subtitle">Наша команда</h2>
-                    <ul class="li-none">
+                    <ul>
                         <li>
                             <img src="./images/igor.jpg" alt="фото Игорь Демьяненко" width="270" /> 
                             <h3 class="team">Игорь Демьяненко</h3>
@@ -107,16 +108,16 @@
         </section>
     </main>
     <!-- Нижняя панель -->
-    <footer>
-        <div class="footer">
-        <a href=" " class="footer-logo"><span class="logo-blue">Web</span>Studio</a>
-        <address>
-            <ul class="footer-address li-none">
-                <li> <p>г. Киев, пр-т Леси Украинки, 26</p> </li>
-                <li> <a href="mailto:info@example.com" class="footer-link footer-address-white">info@example.com</a> </li>
-                <li> <a href="tel:+380991111111" class="footer-link footer-address-white">+38 099 111 11 11</a> </li>
-            </ul>
-        </address>
+    <footer class="footer">
+        <div class="container">
+            <a href=" " class="footer-logo"><span class="logo-blue">Web</span>Studio</a>
+            <address>
+                <ul class="footer-address">
+                    <li> <p>г. Киев, пр-т Леси Украинки, 26</p> </li>
+                    <li> <a href="mailto:info@example.com" class="footer-address-white">info@example.com</a> </li>
+                    <li> <a href="tel:+380991111111" class="footer-address-white">+38 099 111 11 11</a> </li>
+                </ul>
+            </address>
         </div>
     </footer>   
 </body>
