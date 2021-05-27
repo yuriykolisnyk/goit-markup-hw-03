@@ -17,14 +17,14 @@
             <a href=" " class="header-logo"> <span class="logo-blue">Web</span>Studio</a>
             <nav>
                 <ul class="header-nav">
-                <li> <a href="./index.html " class="header-link-current">Студия</a> </li>
-                <li> <a href="./portfolio.html" class="header-link">Портфолио</a> </li>
-                <li> <a href=" " class="header-link">Контакты</a> </li>
+                    <li class="header-nav-list"> <a href="./index.html " class="header-link-current">Студия</a> </li>
+                    <li class="header-nav-list"> <a href="./portfolio.html" class="header-link">Портфолио</a> </li>
+                    <li class="header-nav-list"> <a href=" " class="header-link">Контакты</a> </li>
                 </ul>
             </nav>
                 <ul class="header-address">
-                <li> <a href="mailto:info@devstudio.com" class="header-address-grey">info@devstudio.com</a> </li>
-                <li> <a href="tel:+380961111111" class="header-address-grey">+38 096 111 11 11</a> </li>
+                    <li class="header-address-list"> <a href="mailto:info@devstudio.com" class="header-address-grey">info@devstudio.com</a> </li>
+                    <li class="header-address-list"> <a href="tel:+380961111111" class="header-address-grey">+38 096 111 11 11</a> </li>
                 </ul>
         </div>
     </header>   
@@ -41,7 +41,7 @@
         <section class="studio-features section">
            <!-- <h2>Наши особенности</h2> -->
             <div class="container">
-                <ul>
+                <ul class="features-flex">
                     <li class="studio-list">
                         <h3 class="studio-item">Внимание к деталям</h3>
                         <p class="studio-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -65,7 +65,7 @@
         <section class="studio-solutions section">
             <div class="container">
                 <h2 class="studio-subtitle">Чем мы занимаемся</h2>
-                    <ul>
+                    <ul class="solution-flex">
                         <li class="studio-image">
                             <img src="./images/doing1.jpg" alt="фото решений для ПК" width="370" />
                         </li>
@@ -82,26 +82,34 @@
         <section class="studio-team section">
             <div class="container">
                 <h2 class="studio-subtitle size">Наша команда</h2>
-                    <ul>
-                        <li>
+                    <ul class="team-flex">
+                        <li class="team-photocard">
                             <img src="./images/igor.jpg" alt="фото Игорь Демьяненко" width="270" /> 
-                            <h3 class="team">Игорь Демьяненко</h3>
-                            <p class="team-position">Product Designer</p>
+                                <div class="team-text">
+                                    <h3 class="team">Игорь Демьяненко</h3>
+                                    <p class="team-position">Product Designer</p>
+                                </div>
                         </li>
-                        <li>
+                        <li class="team-photocard">
                             <img src="./images/olga.jpg" alt="фото Ольга Репина" width="270" /> 
-                            <h3 class="team">Ольга Репина</h3>
-                            <p class="team-position">Frontend Developer</p>
+                                <div class="team-text">
+                                    <h3 class="team">Ольга Репина</h3>
+                                    <p class="team-position">Frontend Developer</p>
+                                </div>
                         </li>
-                        <li>
+                        <li class="team-photocard">
                             <img src="./images/nicholas.jpg" alt="фото Николай Тарасов" width="270" /> 
-                            <h3 class="team">Николай Тарасов</h3>
-                            <p class="team-position">Marketing</p>
+                                <div class="team-text">       
+                                    <h3 class="team">Николай Тарасов</h3>
+                                    <p class="team-position">Marketing</p>
+                                </div> 
                         </li>
-                        <li>
+                        <li class="team-photocard">
                             <img src="./images/michail.jpg" alt="фото Михаил Ермаков" width="270" /> 
-                            <h3 class="team">Михаил Ермаков</h3>
-                            <p class="team-position">UI Designer</p>
+                                <div class="team-text">
+                                    <h3 class="team">Михаил Ермаков</h3>
+                                    <p class="team-position">UI Designer</p>
+                                </div> 
                         </li>
                     </ul>
             </div>
@@ -113,9 +121,9 @@
             <a href=" " class="footer-logo"><span class="logo-blue">Web</span>Studio</a>
             <address>
                 <ul class="footer-address">
-                    <li> <p>г. Киев, пр-т Леси Украинки, 26</p> </li>
-                    <li> <a href="mailto:info@example.com" class="footer-address-white">info@example.com</a> </li>
-                    <li> <a href="tel:+380991111111" class="footer-address-white">+38 099 111 11 11</a> </li>
+                    <li class="footer-list"> <p>г. Киев, пр-т Леси Украинки, 26</p> </li>
+                    <li class="footer-list"> <a href="mailto:info@example.com" class="footer-address-white">info@example.com</a> </li>
+                    <li class="footer-list"> <a href="tel:+380991111111" class="footer-address-white">+38 099 111 11 11</a> </li>
                 </ul>
             </address>
         </div>

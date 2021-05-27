@@ -25,35 +25,42 @@ ul {
     margin-bottom: 0;
     padding: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-h1, h2, h3 {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin: 0;
 }
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 .container {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    outline: 2px solid tomato;
 }
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    outline: 2px solid green;
 }
 
 
 /* Стили верхней панели */
 .header {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+}
+.header .container{
+    display: flex;
+    align-items: center;
 }
 .header-logo {
+    display: inline-block;
+    margin-right: 93px;
     text-decoration: none;
     font-family: var(--accent-font);
     font-weight: 700;
@@ -63,13 +70,25 @@ img {
 }
 .header-nav,
 .header-address {
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
 }
+.header-nav .header-nav-list:not(:last-child),
+.header-address .header-address-list:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-address {
+    margin-left: auto;
+}
 .header-link,
 .header-link-current,
 .header-address-grey {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 31px;
     text-decoration: none;
     letter-spacing: 0.02em;
     font-family: inherit;
@@ -116,6 +135,7 @@ img {
 .button-portfolio {
     display: inline-block;
     text-align: center;
+    padding: 6px 22px;
     border-radius: 4px;
     border: none;
     cursor: pointer;
@@ -134,7 +154,6 @@ img {
 /* Стили основного контента Студия*/
 .studio-hero {
     text-align: center;
-    margin-top: 0;
     background-color: var(--black-background-color);
 }
 .studio-title {
@@ -147,8 +166,11 @@ img {
     color: var(--white-color);
     text-transform: uppercase;
 }
-.studio-list {
-    width: 270px;
+.features-flex {
+    display: flex;
+}
+.studio-list{
+    flex-basis: calc((100%-90px)/4);
 }
 .studio-list:not(:last-child) {
     margin-right: 30px;
@@ -165,7 +187,6 @@ img {
     line-height: 1.714;
     color: var(--grey-color-text)
 }
-
 .studio-solutions {
     padding-top: 0;
 }
@@ -176,6 +197,9 @@ img {
     font-size: 36px;
     line-height: 1.17;
 }
+.solution-flex {
+    display: flex;
+}
 .studio-subtitle .size {
     width: 264px;
 }
@@ -185,7 +209,19 @@ img {
 .studio-team {
     background-color: var(--grey-background-color);
 }
+.team-flex {
+    display: flex;
+}
+.team-photocard {
+    flex-basis: calc((100%-90px)/4);
+}
+.team-text {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .team {
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -197,7 +233,33 @@ img {
 }
 
 /* Стили основного контента Портфолио*/
+.porfolio-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+.porfolio-nav > li:not(:last-child) {
+    margin-right: 8px;
+}
+.portfolio-project {
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio-project {
+    flex-basis: calc((100%-60px)/3);
+}
+.portfolio-project > .porfolio-card:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+.portfolio-project > .porfolio-card:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+}
+.portfolio-text {
+    padding: 20px 24px;
+    border: 1px solid rgba(238, 238, 238, 1);
+}
 .portfolio-item {
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -211,6 +273,8 @@ img {
 
 /* Стили нижней панели */
 .footer-logo {
+    display: inline-block;
+    margin-bottom: 20px;
     text-decoration: none;
     font-family: var(--accent-font);
     font-weight: bold;
@@ -219,6 +283,9 @@ img {
     color: var(--white-color);
 }
 .footer {
+    margin-left: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
     font-size: 14px;
     line-height: 1.71;
     color: var(--white-color);
@@ -230,7 +297,12 @@ img {
     color: inherit;  
 }   
 .footer-address {
+    display: block;
     font-style: normal;
+    width: 231px;
+}
+.footer-address .footer-list:not(:last-child) {
+    margin-bottom: 9px;
 }
 .footer .footer-address-white {
     color: rgba(255, 255, 255, 0.6);
