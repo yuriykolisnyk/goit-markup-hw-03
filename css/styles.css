@@ -132,7 +132,8 @@ img {
     color: var(--white-color);
     background-color: #188CE8;
 }
-.button-portfolio {
+.button-portfolio,
+.button-portfolio-hover {
     display: inline-block;
     text-align: center;
     padding: 6px 22px;
@@ -146,8 +147,9 @@ img {
     color: var(--black-color-text);
     background-color: var(--grey-background-color);
 }
-.button-portfolio:hover,
-.button-portfolio:focus {
+.button-portfolio,
+.button-portfolio-hover:hover,
+.button-portfolio-hovero:focus {
     color: var(--white-color);
     background-color: var( --blue-color-text);
 }
