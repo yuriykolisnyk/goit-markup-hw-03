@@ -214,6 +214,9 @@ img {
 .team-flex {
     display: flex;
 }
+.team-photocard:not(:last-child) {
+    margin-right: 30px;
+}
 .team-text {
     text-align: center;
     padding-top: 30px;
