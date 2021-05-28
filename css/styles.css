@@ -111,7 +111,6 @@ img {
 /* Кнопки - pointer, шрифт и цвет*/
 .button-orderservice {
     display: inline-block;
-    margin-bottom: 106px;
     padding: 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -132,7 +131,7 @@ img {
     color: var(--white-color);
     background-color: #188CE8;
 }
-.button-portfolio-blue,
+.button-portfolio-current,
 .button-portfolio {
     display: inline-block;
     text-align: center;
@@ -147,7 +146,7 @@ img {
     color: var(--black-color-text);
     background-color: var(--grey-background-color);
 }
-.button-portfolio-blue,
+.button-portfolio-current,
 .button-portfolio:hover,
 .button-portfolio:focus {
     color: var(--white-color);
@@ -155,11 +154,13 @@ img {
 }
 /* Стили основного контента Студия*/
 .studio-hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
     background-color: var(--black-background-color);
 }
 .studio-title {
-    margin: 106px auto 30px;
+    margin: 0px auto 30px;
     width: 696px;
     font-weight: 900;
     font-size: 44px;
@@ -214,6 +215,10 @@ img {
 .team-flex {
     display: flex;
 }
+.team-photocard {
+    box-shadow: 4px
+    rgba(0, 0, 0, 0.25);
+}
 .team-photocard:not(:last-child) {
     margin-right: 30px;
 }
@@ -238,7 +243,7 @@ img {
 .porfolio-nav {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 .porfolio-nav > li:not(:last-child) {
     margin-right: 8px;
