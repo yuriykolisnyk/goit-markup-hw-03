@@ -132,8 +132,8 @@ img {
     color: var(--white-color);
     background-color: #188CE8;
 }
-.button-portfolio,
-.button-portfolio-hover {
+.button-portfolio-blue,
+.button-portfolio {
     display: inline-block;
     text-align: center;
     padding: 6px 22px;
@@ -147,9 +147,9 @@ img {
     color: var(--black-color-text);
     background-color: var(--grey-background-color);
 }
-.button-portfolio,
-.button-portfolio-hover:hover,
-.button-portfolio-hovero:focus {
+.button-portfolio-blue,
+.button-portfolio:hover,
+.button-portfolio:focus {
     color: var(--white-color);
     background-color: var( --blue-color-text);
 }
@@ -214,9 +214,6 @@ img {
 .team-flex {
     display: flex;
 }
-.team-photocard {
-    width: 270px;
-}
 .team-text {
     text-align: center;
     padding-top: 30px;
@@ -246,9 +243,6 @@ img {
 .portfolio-project {
     display: flex;
     flex-wrap: wrap;
-}
-.portfolio-project {
-    width: 370px;
 }
 .portfolio-project > .porfolio-card:not(:nth-child(3n)) {
     margin-right: 30px;
