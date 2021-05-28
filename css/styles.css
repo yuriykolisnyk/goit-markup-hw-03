@@ -172,7 +172,7 @@ img {
     display: flex;
 }
 .studio-list{
-    flex-basis: calc((100%-90px)/4);
+    width: 270px;
 }
 .studio-list:not(:last-child) {
     margin-right: 30px;
@@ -215,7 +215,7 @@ img {
     display: flex;
 }
 .team-photocard {
-    flex-basis: calc((100%-90px)/4);
+    width: 270px;
 }
 .team-text {
     text-align: center;
@@ -248,7 +248,7 @@ img {
     flex-wrap: wrap;
 }
 .portfolio-project {
-    flex-basis: calc((100%-60px)/3);
+    width: 370px;
 }
 .portfolio-project > .porfolio-card:not(:nth-child(3n)) {
     margin-right: 30px;
